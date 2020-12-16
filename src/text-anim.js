@@ -36,7 +36,7 @@ export default class TextAnim {
     })
   }
 
-  setStyles(element, styles){
+  static setStyles(element, styles){
     for(let key in styles) element.style[key] = styles[key]
   }
 

@@ -8,12 +8,12 @@ export default class TextHola extends TextAnim {
 
     super(element, {
       onBuildChar: (charEl)=>{
-        this.setStyles(charEl, {
+        TextAnim.setStyles(charEl, {
           position: 'relative'
         })
         let clone = document.createElement('i')
         clone.innerHTML = charEl.innerHTML
-        this.setStyles(clone, {
+        TextAnim.setStyles(clone, {
           position: 'absolute',
           left: 0,
           top: '100%'
@@ -41,7 +41,7 @@ export default class TextHola extends TextAnim {
 
     })
 
-    this.setStyles(this.element, {
+    TextAnim.setStyles(this.element, {
       display: 'inline-block',
       marginBottom: '-0.25rem',
       overflow: 'hidden'

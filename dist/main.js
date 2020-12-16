@@ -94,7 +94,19 @@
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text_anim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text-anim */ \"./src/text-anim.js\");\n/* harmony import */ var _text_hola__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./text-hola */ \"./src/text-hola.js\");\n\r\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', ()=>{\r\n  let elements = [...document.querySelectorAll('b')]\r\n  elements.map(element => {\r\n    new _text_hola__WEBPACK_IMPORTED_MODULE_1__[\"default\"](element)\r\n    // new TextAnim(element, {\r\n    //   onBuildChar: (charEl)=>{\r\n    //     let clone = document.createElement('i')\r\n    //     clone.innerHTML = charEl.innerHTML\r\n    //     charEl.appendChild(clone)\r\n    //   },\r\n    //\r\n    //   mouseEnter: ()=>{\r\n    //     let children = [...element.children]\r\n    //     children.map((el, i)=>{\r\n    //       setTimeout(()=>{\r\n    //         el.style.transform = 'translate(0, -100%)'\r\n    //       }, i * 100)\r\n    //     })\r\n    //   },\r\n    //\r\n    //   mouseLeave: ()=>{\r\n    //     let children = [...element.children]\r\n    //     children.map((el, i)=>{\r\n    //       setTimeout(()=>{\r\n    //         el.style.transform = 'translate(0, 0)'\r\n    //       }, i * 100)\r\n    //     })\r\n    //   }\r\n    //\r\n    // })\r\n\r\n  })\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _lib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./lib */ \"./src/lib.js\");\n\r\n\r\ndocument.addEventListener('DOMContentLoaded', ()=>{\r\n  let elements = [...document.querySelectorAll('b')]\r\n  elements.map(element => {\r\n    new _lib__WEBPACK_IMPORTED_MODULE_0__[\"TextHola\"](element)\r\n  })\r\n})\r\n\n\n//# sourceURL=webpack:///./src/index.js?");
+
+/***/ }),
+
+/***/ "./src/lib.js":
+/*!********************!*\
+  !*** ./src/lib.js ***!
+  \********************/
+/*! exports provided: TextAnim, TextHola */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _text_anim__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./text-anim */ \"./src/text-anim.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"TextAnim\", function() { return _text_anim__WEBPACK_IMPORTED_MODULE_0__[\"default\"]; });\n\n/* harmony import */ var _text_hola__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./text-hola */ \"./src/text-hola.js\");\n/* harmony reexport (safe) */ __webpack_require__.d(__webpack_exports__, \"TextHola\", function() { return _text_hola__WEBPACK_IMPORTED_MODULE_1__[\"default\"]; });\n\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack:///./src/lib.js?");
 
 /***/ }),
 

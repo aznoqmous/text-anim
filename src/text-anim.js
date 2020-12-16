@@ -21,6 +21,7 @@ export default class TextAnim {
       let charEl = document.createElement('span')
       charEl.style.transition = this.options.transition
       charEl.style.display = this.options.display
+      if(char === ' ') char = '&nbsp;'
       charEl.innerHTML = char
       this.element.appendChild(charEl)
       if(this.options.onBuildChar) this.options.onBuildChar(charEl)
